@@ -1,0 +1,24 @@
+{
+  "name": "@dapp/monorepo",
+  "license": "private",
+  "version": "0.0.1",
+  "keywords": [
+    "ethereum",
+    "react",
+    "workspaces",
+    "yarn"
+  ],
+  "private": true,
+  "scripts": {
+    "dev": "yarn workspace @dapp/frontend dev"
+  },
+  "workspaces": {
+    "nohoist": [
+      "**/@graphprotocol/graph-ts",
+      "**/@graphprotocol/graph-ts/**"
+    ],
+    "packages": [
+      "packages/*"
+    ]
+  }
+}
